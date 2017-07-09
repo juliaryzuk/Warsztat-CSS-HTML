@@ -46,32 +46,31 @@ ul.menu > li{
 ul.sub-menu {
 display: none;
 }
+
 .about:hover .sub-menu{
-display: block;
+display:block;
 position: absolute;
 border: 1px solid black;
 background-color: black;
 color: white;
+padding: 10px;
+z-index: 2;
+line-height: 30px
 }
+
 .clear {
   clear: both;
 }
 .menu > li:hover .sub-menu::after{
-            content: "";
-            position: absolute;
-            top: -15px;
-            left: 10px;
-            border-style: solid;
-            border-width: 15px 15px 0;
-            border-color: #000 transparent;
-            display: block;
-            width: 0;
-            z-index: 1;
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg);
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-style: solid;
+  border-width: 15px 15px 0;
+  border-color: #000 transparent;
+  display: block;
+  width: 0;
 }
 
 .linear-gradient{
